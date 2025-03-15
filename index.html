@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhantomT - Product Showcase</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Top Search Bar -->
+    <header class="header">
+        <input type="text" placeholder="Search or ask a question" id="search-input">
+        <div class="icons">
+            <span>🔍</span>
+            <span>🎤</span>
+            <span>📷</span>
+        </div>
+    </header>
+
+    <!-- Filter Section -->
+    <section class="filter-section">
+        <label for="price-filter">Sort by Price:</label>
+        <select id="price-filter">
+            <option value="all">All</option>
+            <option value="low">Low to High</option>
+            <option value="high">High to Low</option>
+        </select>
+    </section>
+
+    <!-- Main Content -->
+    <main class="content">
+        <h2>Featured Products</h2>
+
+        <div class="product-grid" id="product-grid">
+            <!-- Product Card 1 -->
+            <div class="product-card" data-price="49.99">
+                <div class="product-image"></div>
+                <div class="product-details">
+                    <h3>Product One</h3>
+                    <p>Short description of product one.</p>
+                    <span class="price">$49.99</span>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product Card 2 -->
+            <div class="product-card" data-price="29.99">
+                <div class="product-image"></div>
+                <div class="product-details">
+                    <h3>Product Two</h3>
+                    <p>Short description of product two.</p>
+                    <span class="price">$29.99</span>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product Card 3 -->
+            <div class="product-card" data-price="19.99">
+                <div class="product-image"></div>
+                <div class="product-details">
+                    <h3>Product Three</h3>
+                    <p>Short description of product three.</p>
+                    <span class="price">$19.99</span>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Bottom Navigation Bar -->
+    <nav class="bottom-nav">
+        <a href="#" class="active">Home</a>
+        <a href="#">You</a>
+        <a href="#">Cart</a>
+        <a href="#">Menu</a>
+        <a href="#">Rufus</a>
+    </nav>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
